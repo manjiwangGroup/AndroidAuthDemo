@@ -30,6 +30,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = '满集授权.apk'
+        }
+    }
 }
 
 dependencies {
